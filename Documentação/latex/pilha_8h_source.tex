@@ -1,0 +1,31 @@
+\doxysection{pilha.\+h}
+\hypertarget{pilha_8h_source}{}\label{pilha_8h_source}\mbox{\hyperlink{pilha_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ PILHA\_H}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ PILHA\_H}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structStack}{Stack}}\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structStack_a7b167082a4c6b68566501eaa2423cb3d}{size}};\ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structStack_a9d88966b156fd4547e9b8a2e7fe48427}{capacity}};\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{int}\ *\mbox{\hyperlink{structStack_a63bb6f348d7911e1c65bcc092d42a1e5}{data}};\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{int}\ *\mbox{\hyperlink{structStack_a8469ad1daa0888ceb073488f06f9cf75}{rear}};\ }
+\DoxyCodeLine{00018\ \}\ \mbox{\hyperlink{structStack}{Stack}};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00025\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{pilha_8h_a7b88b333e2123d5693020c745c938f00}{createStack}}(\mbox{\hyperlink{structStack}{Stack}}\ *stack);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00032\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{pilha_8h_afc0d1f371e3750b1c5d184672e816013}{freeStack}}(\mbox{\hyperlink{structStack}{Stack}}\ *stack);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00041\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{pilha_8h_a9041f748446cd745370efa3f0cc1ef2d}{sizeStack}}(\mbox{\hyperlink{structStack}{Stack}}\ *stack);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00050\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{pilha_8h_adab7dfcfbeaaa63e7bad5ea16485993c}{dataStack}}(\mbox{\hyperlink{structStack}{Stack}}\ *stack);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00058\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{pilha_8h_a360d3aa3543cff6190be4d57ceb9907b}{insertStack}}(\mbox{\hyperlink{structStack}{Stack}}\ *stack,\ \textcolor{keywordtype}{int}\ data);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00065\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{pilha_8h_aa4ab17587a5bb208a6c33eeda9905e02}{removeStack}}(\mbox{\hyperlink{structStack}{Stack}}\ *stack);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00073\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{pilha_8h_a6fc6e2e41dc775004c61824828abb856}{reSizeStack}}(\mbox{\hyperlink{structStack}{Stack}}\ *stack,\ \textcolor{keywordtype}{int}\ newSize);}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

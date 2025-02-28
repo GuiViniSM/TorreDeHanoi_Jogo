@@ -1,0 +1,69 @@
+\doxysection{node Struct Reference}
+\hypertarget{structnode}{}\label{structnode}\index{node@{node}}
+
+
+Estrutura do nó da lista ordenada.  
+
+
+
+
+{\ttfamily \#include $<$lista\+Ordenada.\+h$>$}
+
+
+
+Collaboration diagram for node\+:
+% FIG 0
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{structnode_a1323b5166958da3af21bd051b3fa22d6}{movimentos}}
+\item 
+int \mbox{\hyperlink{structnode_a6d8ef4da77932e6159ad7bd28e249d38}{num\+Discos}}
+\item 
+char \mbox{\hyperlink{structnode_a57c714a749b361a8f63efacfbf45368f}{nome}} \mbox{[}50\mbox{]}
+\item 
+struct \mbox{\hyperlink{structnode}{node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structnode_a97caeb466e7cc0ab9a7bbb5e16021618}{proximo}}
+\item 
+struct \mbox{\hyperlink{structnode}{node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structnode_aa04ece7f88f284d5c7c2bf6743be22e0}{anterior}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Estrutura do nó da lista ordenada. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structnode_aa04ece7f88f284d5c7c2bf6743be22e0}\label{structnode_aa04ece7f88f284d5c7c2bf6743be22e0} 
+\index{node@{node}!anterior@{anterior}}
+\index{anterior@{anterior}!node@{node}}
+\doxysubsubsection{\texorpdfstring{anterior}{anterior}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structnode}{node}}\texorpdfstring{$\ast$}{*} node\+::anterior}
+
+Ponteiro para o nó anterior. \Hypertarget{structnode_a1323b5166958da3af21bd051b3fa22d6}\label{structnode_a1323b5166958da3af21bd051b3fa22d6} 
+\index{node@{node}!movimentos@{movimentos}}
+\index{movimentos@{movimentos}!node@{node}}
+\doxysubsubsection{\texorpdfstring{movimentos}{movimentos}}
+{\footnotesize\ttfamily int node\+::movimentos}
+
+Número de movimentos do jogador no placar. \Hypertarget{structnode_a57c714a749b361a8f63efacfbf45368f}\label{structnode_a57c714a749b361a8f63efacfbf45368f} 
+\index{node@{node}!nome@{nome}}
+\index{nome@{nome}!node@{node}}
+\doxysubsubsection{\texorpdfstring{nome}{nome}}
+{\footnotesize\ttfamily char node\+::nome\mbox{[}50\mbox{]}}
+
+Nome do jogador. \Hypertarget{structnode_a6d8ef4da77932e6159ad7bd28e249d38}\label{structnode_a6d8ef4da77932e6159ad7bd28e249d38} 
+\index{node@{node}!numDiscos@{numDiscos}}
+\index{numDiscos@{numDiscos}!node@{node}}
+\doxysubsubsection{\texorpdfstring{numDiscos}{numDiscos}}
+{\footnotesize\ttfamily int node\+::num\+Discos}
+
+Número de discos utilizado pelo jogador. \Hypertarget{structnode_a97caeb466e7cc0ab9a7bbb5e16021618}\label{structnode_a97caeb466e7cc0ab9a7bbb5e16021618} 
+\index{node@{node}!proximo@{proximo}}
+\index{proximo@{proximo}!node@{node}}
+\doxysubsubsection{\texorpdfstring{proximo}{proximo}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structnode}{node}}\texorpdfstring{$\ast$}{*} node\+::proximo}
+
+Ponteiro para o próximo nó. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{listaOrdenada_8h}{lista\+Ordenada.\+h}}\end{DoxyCompactItemize}

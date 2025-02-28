@@ -1,0 +1,164 @@
+\doxysection{pilha.\+h File Reference}
+\hypertarget{pilha_8h}{}\label{pilha_8h}\index{pilha.h@{pilha.h}}
+
+
+Definição das estruturas e escopo das funções utilizadas na manipulação de pilhas.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structStack}{Stack}}
+\begin{DoxyCompactList}\small\item\em Estrutura para representar uma pilha. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{pilha_8h_acccdaeb94a63f3757825012007215c0d}\label{pilha_8h_acccdaeb94a63f3757825012007215c0d} 
+typedef struct \mbox{\hyperlink{structStack}{Stack}} {\bfseries Stack}
+\begin{DoxyCompactList}\small\item\em Estrutura para representar uma pilha. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{pilha_8h_a7b88b333e2123d5693020c745c938f00}{create\+Stack}} (\mbox{\hyperlink{structStack}{Stack}} \texorpdfstring{$\ast$}{*}stack)
+\begin{DoxyCompactList}\small\item\em Inicializa a pilha. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pilha_8h_afc0d1f371e3750b1c5d184672e816013}{free\+Stack}} (\mbox{\hyperlink{structStack}{Stack}} \texorpdfstring{$\ast$}{*}stack)
+\begin{DoxyCompactList}\small\item\em Destroi a pilha, liiberando a memória alocada para a pilha. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{pilha_8h_a9041f748446cd745370efa3f0cc1ef2d}{size\+Stack}} (\mbox{\hyperlink{structStack}{Stack}} \texorpdfstring{$\ast$}{*}stack)
+\begin{DoxyCompactList}\small\item\em Retorna o tamanho da pilha. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{pilha_8h_adab7dfcfbeaaa63e7bad5ea16485993c}{data\+Stack}} (\mbox{\hyperlink{structStack}{Stack}} \texorpdfstring{$\ast$}{*}stack)
+\begin{DoxyCompactList}\small\item\em Retorna o valor do elemento no topo da pilha. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pilha_8h_a360d3aa3543cff6190be4d57ceb9907b}{insert\+Stack}} (\mbox{\hyperlink{structStack}{Stack}} \texorpdfstring{$\ast$}{*}stack, int data)
+\begin{DoxyCompactList}\small\item\em Insere um elemento na pilha. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pilha_8h_aa4ab17587a5bb208a6c33eeda9905e02}{remove\+Stack}} (\mbox{\hyperlink{structStack}{Stack}} \texorpdfstring{$\ast$}{*}stack)
+\begin{DoxyCompactList}\small\item\em Remove um elemento da pilha. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pilha_8h_a6fc6e2e41dc775004c61824828abb856}{re\+Size\+Stack}} (\mbox{\hyperlink{structStack}{Stack}} \texorpdfstring{$\ast$}{*}stack, int new\+Size)
+\begin{DoxyCompactList}\small\item\em Redimensiona a capacidade da pilha. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Definição das estruturas e escopo das funções utilizadas na manipulação de pilhas. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{pilha_8h_a7b88b333e2123d5693020c745c938f00}\label{pilha_8h_a7b88b333e2123d5693020c745c938f00} 
+\index{pilha.h@{pilha.h}!createStack@{createStack}}
+\index{createStack@{createStack}!pilha.h@{pilha.h}}
+\doxysubsubsection{\texorpdfstring{createStack()}{createStack()}}
+{\footnotesize\ttfamily void create\+Stack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structStack}{Stack}} \texorpdfstring{$\ast$}{*}}]{stack }\end{DoxyParamCaption})}
+
+
+
+Inicializa a pilha. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & Ponteiro para a pilha a ser criada. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{pilha_8h_adab7dfcfbeaaa63e7bad5ea16485993c}\label{pilha_8h_adab7dfcfbeaaa63e7bad5ea16485993c} 
+\index{pilha.h@{pilha.h}!dataStack@{dataStack}}
+\index{dataStack@{dataStack}!pilha.h@{pilha.h}}
+\doxysubsubsection{\texorpdfstring{dataStack()}{dataStack()}}
+{\footnotesize\ttfamily int data\+Stack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structStack}{Stack}} \texorpdfstring{$\ast$}{*}}]{stack }\end{DoxyParamCaption})}
+
+
+
+Retorna o valor do elemento no topo da pilha. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & Ponteiro para a pilha.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valor do elemento no topo da pilha. 
+\end{DoxyReturn}
+\Hypertarget{pilha_8h_afc0d1f371e3750b1c5d184672e816013}\label{pilha_8h_afc0d1f371e3750b1c5d184672e816013} 
+\index{pilha.h@{pilha.h}!freeStack@{freeStack}}
+\index{freeStack@{freeStack}!pilha.h@{pilha.h}}
+\doxysubsubsection{\texorpdfstring{freeStack()}{freeStack()}}
+{\footnotesize\ttfamily void free\+Stack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structStack}{Stack}} \texorpdfstring{$\ast$}{*}}]{stack }\end{DoxyParamCaption})}
+
+
+
+Destroi a pilha, liiberando a memória alocada para a pilha. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & Ponteiro para a pilha a ser destruida. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{pilha_8h_a360d3aa3543cff6190be4d57ceb9907b}\label{pilha_8h_a360d3aa3543cff6190be4d57ceb9907b} 
+\index{pilha.h@{pilha.h}!insertStack@{insertStack}}
+\index{insertStack@{insertStack}!pilha.h@{pilha.h}}
+\doxysubsubsection{\texorpdfstring{insertStack()}{insertStack()}}
+{\footnotesize\ttfamily void insert\+Stack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structStack}{Stack}} \texorpdfstring{$\ast$}{*}}]{stack,  }\item[{int}]{data }\end{DoxyParamCaption})}
+
+
+
+Insere um elemento na pilha. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & Ponteiro para a pilha. \\
+\hline
+{\em data} & Valor do elemento a ser inserido. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{pilha_8h_aa4ab17587a5bb208a6c33eeda9905e02}\label{pilha_8h_aa4ab17587a5bb208a6c33eeda9905e02} 
+\index{pilha.h@{pilha.h}!removeStack@{removeStack}}
+\index{removeStack@{removeStack}!pilha.h@{pilha.h}}
+\doxysubsubsection{\texorpdfstring{removeStack()}{removeStack()}}
+{\footnotesize\ttfamily void remove\+Stack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structStack}{Stack}} \texorpdfstring{$\ast$}{*}}]{stack }\end{DoxyParamCaption})}
+
+
+
+Remove um elemento da pilha. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & Ponteiro para a pilha. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{pilha_8h_a6fc6e2e41dc775004c61824828abb856}\label{pilha_8h_a6fc6e2e41dc775004c61824828abb856} 
+\index{pilha.h@{pilha.h}!reSizeStack@{reSizeStack}}
+\index{reSizeStack@{reSizeStack}!pilha.h@{pilha.h}}
+\doxysubsubsection{\texorpdfstring{reSizeStack()}{reSizeStack()}}
+{\footnotesize\ttfamily void re\+Size\+Stack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structStack}{Stack}} \texorpdfstring{$\ast$}{*}}]{stack,  }\item[{int}]{new\+Size }\end{DoxyParamCaption})}
+
+
+
+Redimensiona a capacidade da pilha. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & Ponteiro para a pilha. \\
+\hline
+{\em new\+Size} & Novo capacidade da pilha. \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Novo endereço da pilha, após mudança de tamanho.
+
+\texorpdfstring{$<$}{<} Variável temporária que vai percorrer a antiga pilha para tranferir os valores armazenados.
+
+\texorpdfstring{$<$}{<} Variável temporária que vai percorrer a nova pilha, inserindo os valores da antiga pilha.\Hypertarget{pilha_8h_a9041f748446cd745370efa3f0cc1ef2d}\label{pilha_8h_a9041f748446cd745370efa3f0cc1ef2d} 
+\index{pilha.h@{pilha.h}!sizeStack@{sizeStack}}
+\index{sizeStack@{sizeStack}!pilha.h@{pilha.h}}
+\doxysubsubsection{\texorpdfstring{sizeStack()}{sizeStack()}}
+{\footnotesize\ttfamily int size\+Stack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structStack}{Stack}} \texorpdfstring{$\ast$}{*}}]{stack }\end{DoxyParamCaption})}
+
+
+
+Retorna o tamanho da pilha. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & Ponteiro para a pilha.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tamanho da pilha. 
+\end{DoxyReturn}

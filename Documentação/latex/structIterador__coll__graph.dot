@@ -1,0 +1,14 @@
+digraph "Iterador"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [id="Node000001",label="Iterador",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Estrutura do iterador para lista ordenada."];
+  Node2 -> Node1 [id="edge5_Node000001_Node000002",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" elemento",fontcolor="grey" ];
+  Node2 [id="Node000002",label="node",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$structnode.html",tooltip="Estrutura do nó da lista ordenada."];
+  Node2 -> Node2 [id="edge6_Node000002_Node000002",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" anterior\nproximo",fontcolor="grey" ];
+  Node3 -> Node1 [id="edge7_Node000001_Node000003",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" lista",fontcolor="grey" ];
+  Node3 [id="Node000003",label="SortedList",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$structSortedList.html",tooltip="Estrutura da lista ordenada."];
+  Node2 -> Node3 [id="edge8_Node000003_Node000002",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" sentinela",fontcolor="grey" ];
+}

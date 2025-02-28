@@ -1,0 +1,349 @@
+\doxysection{main.\+c File Reference}
+\hypertarget{main_8c}{}\label{main_8c}\index{main.c@{main.c}}
+
+
+Implementação do jogo Torre de Hanoi.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include "{}pilha.\+h"{}}\newline
+{\ttfamily \#include "{}lista\+Ordenada.\+h"{}}\newline
+Include dependency graph for main.\+c\+:
+% FIG 0
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structhanoi}{hanoi}}
+\begin{DoxyCompactList}\small\item\em Estrutura para armazenar as torres de Hanoi. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{main_8c_a4f550431d8a230a4ddd0e192325101da}\label{main_8c_a4f550431d8a230a4ddd0e192325101da} 
+typedef struct \mbox{\hyperlink{structhanoi}{hanoi}} {\bfseries Hanoi}
+\begin{DoxyCompactList}\small\item\em Estrutura para armazenar as torres de Hanoi. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{main_8c_ac8bb3912a3ce86b15842e79d0b421204}\label{main_8c_ac8bb3912a3ce86b15842e79d0b421204} 
+void {\bfseries clear} ()
+\begin{DoxyCompactList}\small\item\em Limpa a tela do terminal. \end{DoxyCompactList}\item 
+\Hypertarget{main_8c_aa3b21853f890838c88d047d6c2786917}\label{main_8c_aa3b21853f890838c88d047d6c2786917} 
+void {\bfseries wait} ()
+\begin{DoxyCompactList}\small\item\em Espera o usuário apertar enter. \end{DoxyCompactList}\item 
+\Hypertarget{main_8c_ab13e858612c64eeef73aff1d8a03945e}\label{main_8c_ab13e858612c64eeef73aff1d8a03945e} 
+void {\bfseries print\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Imprime o menu principal do jogo. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{main_8c_ac2d271e38c0bcfda9c89670fa5eae324}{ler\+Opcao}} ()
+\begin{DoxyCompactList}\small\item\em Lê a opção do menu escolhida pelo usuário. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8c_a7aa404ba8f222169335c7a5c8e300260}{opcao\+Invalida}} (char opcao)
+\begin{DoxyCompactList}\small\item\em Verifica se a opção escolhida é válida. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8c_a27308a1274403ea5f3ab8f1a237277c9}{jogo}} (\mbox{\hyperlink{structSortedList}{Sorted\+List}} \texorpdfstring{$\ast$}{*}placar)
+\begin{DoxyCompactList}\small\item\em Inicia o jogo da Torre de Hanoi. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8c_a07ba8e6bd91e75ac2568e39f83b9f8ec}{iniciar\+Hanoi}} (\mbox{\hyperlink{main_8c_a4f550431d8a230a4ddd0e192325101da}{Hanoi}} \texorpdfstring{$\ast$}{*}torre, int qtd)
+\begin{DoxyCompactList}\small\item\em Inicializa a estrutura da Torre de Hanoi. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8c_ac88850cf23d17897bc85716fdd15b307}{destruir\+Hanoi}} (\mbox{\hyperlink{main_8c_a4f550431d8a230a4ddd0e192325101da}{Hanoi}} \texorpdfstring{$\ast$}{*}torre)
+\begin{DoxyCompactList}\small\item\em Destrói a estrutura da Torre de Hanoi. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8c_a348ab009a4b9ab50fe70e9c33fc5b524}{torre\+Valida}} (\mbox{\hyperlink{main_8c_a4f550431d8a230a4ddd0e192325101da}{Hanoi}} torre, int origem, int dest)
+\begin{DoxyCompactList}\small\item\em Verifica se as torres de origem e destino são válidas. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8c_ae981a68712b9038756d69c288fe3becf}{torre\+Vazia}} (\mbox{\hyperlink{main_8c_a4f550431d8a230a4ddd0e192325101da}{Hanoi}} torre, int num)
+\begin{DoxyCompactList}\small\item\em Verifica se a torre está vazia. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8c_a4a2242402afc3dc37938650fe85bb6d8}{movimento\+Valido}} (\mbox{\hyperlink{main_8c_a4f550431d8a230a4ddd0e192325101da}{Hanoi}} torre, int origem, int destino)
+\begin{DoxyCompactList}\small\item\em Verifica se o movimento é válido. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8c_a38e5d8ed4aa27e32a6c2f757a739719a}{mover\+Disco}} (\mbox{\hyperlink{main_8c_a4f550431d8a230a4ddd0e192325101da}{Hanoi}} \texorpdfstring{$\ast$}{*}torre, int origem, int dest)
+\begin{DoxyCompactList}\small\item\em Move um disco de uma torre para outra. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8c_aa9259c27b066713cf865dffccda5e879}{ganhou\+Jogo}} (\mbox{\hyperlink{main_8c_a4f550431d8a230a4ddd0e192325101da}{Hanoi}} torre, int qtd)
+\begin{DoxyCompactList}\small\item\em Verifica se o jogador ganhou o jogo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8c_a231dc855b028d2737b7dde02790986a0}{print\+Hanoi}} (\mbox{\hyperlink{main_8c_a4f550431d8a230a4ddd0e192325101da}{Hanoi}} \texorpdfstring{$\ast$}{*}torre, int qtd)
+\begin{DoxyCompactList}\small\item\em Imprime as torres de Hanoi. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8c_a6401c1f12125527562dc04c71255be9f}{valor\+Torre}} (\mbox{\hyperlink{main_8c_a4f550431d8a230a4ddd0e192325101da}{Hanoi}} \texorpdfstring{$\ast$}{*}torre, int idx, int aux\mbox{[}3\mbox{]}\mbox{[}9\mbox{]})
+\begin{DoxyCompactList}\small\item\em Obtém os valores das torres de Hanoi. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Função principal do programa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const char \texorpdfstring{$\ast$}{*}const \mbox{\hyperlink{main_8c_ab03035d056aaa704ea3befb1c1cef8a6}{discos}} \mbox{[}$\,$\mbox{]}
+\begin{DoxyCompactList}\small\item\em Representação visual dos discos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementação do jogo Torre de Hanoi. 
+
+O programa Torre de Hanoi simula o famoso jogo quebra-\/cabeça Torre de Hanoi, o objetivo é mover todos os discos que estão inicialmente na torre 1 para a torre 3, movendo apenas um disco por vez e sem colocar um disco maior sobre um disco menor. 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8c_ac88850cf23d17897bc85716fdd15b307}\label{main_8c_ac88850cf23d17897bc85716fdd15b307} 
+\index{main.c@{main.c}!destruirHanoi@{destruirHanoi}}
+\index{destruirHanoi@{destruirHanoi}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{destruirHanoi()}{destruirHanoi()}}
+{\footnotesize\ttfamily void destruir\+Hanoi (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{main_8c_a4f550431d8a230a4ddd0e192325101da}{Hanoi}} \texorpdfstring{$\ast$}{*}}]{torre }\end{DoxyParamCaption})}
+
+
+
+Destrói a estrutura da Torre de Hanoi. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em torre} & Ponteiro para a estrutura Hanoi. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{main_8c_aa9259c27b066713cf865dffccda5e879}\label{main_8c_aa9259c27b066713cf865dffccda5e879} 
+\index{main.c@{main.c}!ganhouJogo@{ganhouJogo}}
+\index{ganhouJogo@{ganhouJogo}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{ganhouJogo()}{ganhouJogo()}}
+{\footnotesize\ttfamily int ganhou\+Jogo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{main_8c_a4f550431d8a230a4ddd0e192325101da}{Hanoi}}}]{torre,  }\item[{int}]{qtd }\end{DoxyParamCaption})}
+
+
+
+Verifica se o jogador ganhou o jogo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em torre} & Estrutura Hanoi. \\
+\hline
+{\em qtd} & Quantidade de discos.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 se o jogador ganhou, 0 caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{main_8c_a07ba8e6bd91e75ac2568e39f83b9f8ec}\label{main_8c_a07ba8e6bd91e75ac2568e39f83b9f8ec} 
+\index{main.c@{main.c}!iniciarHanoi@{iniciarHanoi}}
+\index{iniciarHanoi@{iniciarHanoi}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{iniciarHanoi()}{iniciarHanoi()}}
+{\footnotesize\ttfamily void iniciar\+Hanoi (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{main_8c_a4f550431d8a230a4ddd0e192325101da}{Hanoi}} \texorpdfstring{$\ast$}{*}}]{torre,  }\item[{int}]{qtd }\end{DoxyParamCaption})}
+
+
+
+Inicializa a estrutura da Torre de Hanoi. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em torre} & Ponteiro para a estrutura Hanoi. \\
+\hline
+{\em qtd} & Quantidade de discos. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{main_8c_a27308a1274403ea5f3ab8f1a237277c9}\label{main_8c_a27308a1274403ea5f3ab8f1a237277c9} 
+\index{main.c@{main.c}!jogo@{jogo}}
+\index{jogo@{jogo}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{jogo()}{jogo()}}
+{\footnotesize\ttfamily void jogo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSortedList}{Sorted\+List}} \texorpdfstring{$\ast$}{*}}]{placar }\end{DoxyParamCaption})}
+
+
+
+Inicia o jogo da Torre de Hanoi. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em placar} & Lista ordenada para armazenar o placar. \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Torres do jogo.
+
+\texorpdfstring{$<$}{<} Nome do jogador.
+
+\texorpdfstring{$<$}{<} Número de discos do jogo.
+
+\texorpdfstring{$<$}{<} Torre do qual o disco sai.
+
+\texorpdfstring{$<$}{<} Torre a qual o disco chega.
+
+\texorpdfstring{$<$}{<} Número de movimentos efetuados pelo jogador\Hypertarget{main_8c_ac2d271e38c0bcfda9c89670fa5eae324}\label{main_8c_ac2d271e38c0bcfda9c89670fa5eae324} 
+\index{main.c@{main.c}!lerOpcao@{lerOpcao}}
+\index{lerOpcao@{lerOpcao}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{lerOpcao()}{lerOpcao()}}
+{\footnotesize\ttfamily char ler\+Opcao (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Lê a opção do menu escolhida pelo usuário. 
+
+\begin{DoxyReturn}{Returns}
+char A opção escolhida. 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Opção do menu a ser escolhida pelo usuário\Hypertarget{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função principal do programa. 
+
+\begin{DoxyReturn}{Returns}
+Int retorno padrão 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Lista ordenada que armazena o placar.
+
+\texorpdfstring{$<$}{<} Entrada do usuário sobre o menu.
+
+\texorpdfstring{$<$}{<} \doxylink{structIterador}{Iterador} para impressão do placar.
+
+\texorpdfstring{$<$}{<} Node auxiliar para acessar valores do placar.\Hypertarget{main_8c_a38e5d8ed4aa27e32a6c2f757a739719a}\label{main_8c_a38e5d8ed4aa27e32a6c2f757a739719a} 
+\index{main.c@{main.c}!moverDisco@{moverDisco}}
+\index{moverDisco@{moverDisco}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{moverDisco()}{moverDisco()}}
+{\footnotesize\ttfamily void mover\+Disco (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{main_8c_a4f550431d8a230a4ddd0e192325101da}{Hanoi}} \texorpdfstring{$\ast$}{*}}]{torre,  }\item[{int}]{origem,  }\item[{int}]{dest }\end{DoxyParamCaption})}
+
+
+
+Move um disco de uma torre para outra. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em torre} & Ponteiro para a estrutura Hanoi. \\
+\hline
+{\em origem} & Índice da torre de origem. \\
+\hline
+{\em dest} & Índice da torre de destino. \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Variavel para auxiliar a transferência de disco.\Hypertarget{main_8c_a4a2242402afc3dc37938650fe85bb6d8}\label{main_8c_a4a2242402afc3dc37938650fe85bb6d8} 
+\index{main.c@{main.c}!movimentoValido@{movimentoValido}}
+\index{movimentoValido@{movimentoValido}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{movimentoValido()}{movimentoValido()}}
+{\footnotesize\ttfamily int movimento\+Valido (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{main_8c_a4f550431d8a230a4ddd0e192325101da}{Hanoi}}}]{torre,  }\item[{int}]{origem,  }\item[{int}]{destino }\end{DoxyParamCaption})}
+
+
+
+Verifica se o movimento é válido. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em torre} & Estrutura Hanoi. \\
+\hline
+{\em origem} & Índice da torre de origem. \\
+\hline
+{\em destino} & Índice da torre de destino.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 se o movimento é válido, 0 caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{main_8c_a7aa404ba8f222169335c7a5c8e300260}\label{main_8c_a7aa404ba8f222169335c7a5c8e300260} 
+\index{main.c@{main.c}!opcaoInvalida@{opcaoInvalida}}
+\index{opcaoInvalida@{opcaoInvalida}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{opcaoInvalida()}{opcaoInvalida()}}
+{\footnotesize\ttfamily int opcao\+Invalida (\begin{DoxyParamCaption}\item[{char}]{opcao }\end{DoxyParamCaption})}
+
+
+
+Verifica se a opção escolhida é válida. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em opcao} & A opção escolhida pelo usuário.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 se a opção for inválida, 0 caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{main_8c_a231dc855b028d2737b7dde02790986a0}\label{main_8c_a231dc855b028d2737b7dde02790986a0} 
+\index{main.c@{main.c}!printHanoi@{printHanoi}}
+\index{printHanoi@{printHanoi}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{printHanoi()}{printHanoi()}}
+{\footnotesize\ttfamily void print\+Hanoi (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{main_8c_a4f550431d8a230a4ddd0e192325101da}{Hanoi}} \texorpdfstring{$\ast$}{*}}]{torre,  }\item[{int}]{qtd }\end{DoxyParamCaption})}
+
+
+
+Imprime as torres de Hanoi. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em torre} & Ponteiro para a estrutura Hanoi. \\
+\hline
+{\em qtd} & Quantidade de discos. \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Matrix auxiliar que armazena o valor das stacks para a impressão.\Hypertarget{main_8c_a348ab009a4b9ab50fe70e9c33fc5b524}\label{main_8c_a348ab009a4b9ab50fe70e9c33fc5b524} 
+\index{main.c@{main.c}!torreValida@{torreValida}}
+\index{torreValida@{torreValida}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{torreValida()}{torreValida()}}
+{\footnotesize\ttfamily int torre\+Valida (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{main_8c_a4f550431d8a230a4ddd0e192325101da}{Hanoi}}}]{torre,  }\item[{int}]{origem,  }\item[{int}]{dest }\end{DoxyParamCaption})}
+
+
+
+Verifica se as torres de origem e destino são válidas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em torre} & Estrutura Hanoi. \\
+\hline
+{\em origem} & Índice da torre de origem. \\
+\hline
+{\em dest} & Índice da torre de destino.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 se as torres são válidas, 0 caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{main_8c_ae981a68712b9038756d69c288fe3becf}\label{main_8c_ae981a68712b9038756d69c288fe3becf} 
+\index{main.c@{main.c}!torreVazia@{torreVazia}}
+\index{torreVazia@{torreVazia}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{torreVazia()}{torreVazia()}}
+{\footnotesize\ttfamily int torre\+Vazia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{main_8c_a4f550431d8a230a4ddd0e192325101da}{Hanoi}}}]{torre,  }\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+Verifica se a torre está vazia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em torre} & Estrutura Hanoi. \\
+\hline
+{\em num} & Índice da torre.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 se a torre está vazia, 0 caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{main_8c_a6401c1f12125527562dc04c71255be9f}\label{main_8c_a6401c1f12125527562dc04c71255be9f} 
+\index{main.c@{main.c}!valorTorre@{valorTorre}}
+\index{valorTorre@{valorTorre}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{valorTorre()}{valorTorre()}}
+{\footnotesize\ttfamily void valor\+Torre (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{main_8c_a4f550431d8a230a4ddd0e192325101da}{Hanoi}} \texorpdfstring{$\ast$}{*}}]{torre,  }\item[{int}]{idx,  }\item[{int}]{aux\mbox{[}3\mbox{]}\mbox{[}9\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Obtém os valores das torres de Hanoi. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em torre} & Ponteiro para a estrutura Hanoi. \\
+\hline
+{\em idx} & Índice da torre. \\
+\hline
+{\em aux} & Array auxiliar para armazenar os valores. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{main_8c_ab03035d056aaa704ea3befb1c1cef8a6}\label{main_8c_ab03035d056aaa704ea3befb1c1cef8a6} 
+\index{main.c@{main.c}!discos@{discos}}
+\index{discos@{discos}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{discos}{discos}}
+{\footnotesize\ttfamily const char\texorpdfstring{$\ast$}{*} const discos\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}0\ \ \ \ \ \ \ \ |\ \ \ \ \ \ \ \(\backslash\)0"{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}1\ \ \ \ \ \ \ \ -\/\ \ \ \ \ \ \ \(\backslash\)0"{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}2\ \ \ \ \ \ \ -\/-\/-\/\ \ \ \ \ \ \(\backslash\)0"{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}3\ \ \ \ \ \ -\/-\/-\/-\/-\/\ \ \ \ \ \(\backslash\)0"{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}4\ \ \ \ \ -\/-\/-\/-\/-\/-\/-\/\ \ \ \ \(\backslash\)0"{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}5\ \ \ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/\ \ \ \(\backslash\)0"{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}6\ \ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ \ \(\backslash\)0"{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}7\ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ \(\backslash\)0"{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}8\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\(\backslash\)0"{}}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Representação visual dos discos. 
+
